@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Champions List</title>
+</head>
+<body>
+  <div class="champions-list-container"></div>
+    <h2>Champions List</h2>
+    <table mat-table [dataSource]="champions" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let champion">{{champion.id}}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let champion">{{champion.name}}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>Title</th>
+        <td mat-cell *matCellDef="let champion">{{champion.title}}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="key">
+        <th mat-header-cell *matHeaderCellDef>Key</th>
+        <td mat-cell *matCellDef="let champion">{{champion.key}}</td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</body>
+</html>

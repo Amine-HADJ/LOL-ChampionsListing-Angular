@@ -1,3 +1,7 @@
+// Ce fichier est le module racine de l'application.
+// Il importe les autres modules nécessaires pour que l'application fonctionne correctement.
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,6 +23,7 @@ import { ChampionService } from './champion-service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data-service';
 import 'ag-grid-community';
+
 
 
 @NgModule({

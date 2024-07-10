@@ -1,3 +1,7 @@
+// Ce service permet de récupérer les données des champions via le fichier JSON champion_info.json.
+// in-memory-data-service sert à créer une base de données en mémoire pour stocker les données des champions.
+
+
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 import { Champion } from './champion.interface';

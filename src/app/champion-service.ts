@@ -1,3 +1,6 @@
+// Ce service permet de récupérer les champions depuis le serveur simulé et de les supprimer.
+// Il utilise le service HttpClient pour effectuer des requêtes HTTP.
+
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';

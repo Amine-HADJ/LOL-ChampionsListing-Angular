@@ -1,3 +1,6 @@
+// Ce composant permet de supprimer un champion.
+// Il utilise le service ChampionService pour supprimer un champion.
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ChampionService } from './champion-service';

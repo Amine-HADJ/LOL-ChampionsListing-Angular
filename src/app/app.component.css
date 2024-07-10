@@ -1,10 +1,10 @@
 .container {
-    margin: 20px;
+    margin: 10px;
   }
   
   .nav {
     background-color: #7d7878;
-    padding: 10px;
+    padding: 20px;
   }
   
   .nav a {
@@ -14,6 +14,7 @@
     margin-right: 10px;
     transition: background-color 0.3s ease; 
     border-radius: 4px;
+    margin-top: 10px;
   }
   
   .nav a:hover {
@@ -26,5 +27,13 @@
   
   .nav a.active:hover {
     background-color: #005A82; 
+  }
+
+  .logo {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -25px;
   }
   
